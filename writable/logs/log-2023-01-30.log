@@ -1,0 +1,84 @@
+ERROR - 2023-01-30 21:26:56 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\uaswida\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\uaswida\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'db_masjid', 3306, '', 0)
+#1 C:\xampp\htdocs\uaswida\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\uaswida\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\uaswida\app\Models\Masjid_model.php(13): CodeIgniter\Database\BaseConnection->query('select a.id,a.n...')
+#4 C:\xampp\htdocs\uaswida\app\Controllers\Masjid.php(20): App\Models\Masjid_model->data_masjid_json()
+#5 C:\xampp\htdocs\uaswida\system\CodeIgniter.php(925): App\Controllers\Masjid->data_masjid_json()
+#6 C:\xampp\htdocs\uaswida\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masjid))
+#7 C:\xampp\htdocs\uaswida\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\uaswida\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\uaswida\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\uaswida\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\uaswida\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\uaswida\app\Models\Masjid_model.php(13): CodeIgniter\Database\BaseConnection->query('select a.id,a.n...')
+#3 C:\xampp\htdocs\uaswida\app\Controllers\Masjid.php(20): App\Models\Masjid_model->data_masjid_json()
+#4 C:\xampp\htdocs\uaswida\system\CodeIgniter.php(925): App\Controllers\Masjid->data_masjid_json()
+#5 C:\xampp\htdocs\uaswida\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masjid))
+#6 C:\xampp\htdocs\uaswida\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\uaswida\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-30 21:26:56 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Masjid_model.php(13): CodeIgniter\Database\BaseConnection->query('select a.id,a.nama_masjid,a.luas_tanah,a.luas_bangunan,
+		a.daya_tampung,a.tgl_resmi,a.alamat,b.provinsi,c.kategori,
+		d.tipologi,a.tanggal_masuk from tab_masjid as a 
+		left join tab_provinsi as b on a.provinsi = b.id
+		left join tab_kategori as c on a.kategori = c.id
+		left join tab_tipologi as d on a.tipologi = d.id')
+ 3 APPPATH\Controllers\Masjid.php(20): App\Models\Masjid_model->data_masjid_json()
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Masjid->data_masjid_json()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masjid))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-30 21:27:09 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\uaswida\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\uaswida\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'db_masjid', 3306, '', 0)
+#1 C:\xampp\htdocs\uaswida\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\uaswida\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\uaswida\app\Models\Masjid_model.php(13): CodeIgniter\Database\BaseConnection->query('select a.id,a.n...')
+#4 C:\xampp\htdocs\uaswida\app\Controllers\Masjid.php(20): App\Models\Masjid_model->data_masjid_json()
+#5 C:\xampp\htdocs\uaswida\system\CodeIgniter.php(925): App\Controllers\Masjid->data_masjid_json()
+#6 C:\xampp\htdocs\uaswida\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masjid))
+#7 C:\xampp\htdocs\uaswida\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\uaswida\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\uaswida\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\uaswida\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\uaswida\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\uaswida\app\Models\Masjid_model.php(13): CodeIgniter\Database\BaseConnection->query('select a.id,a.n...')
+#3 C:\xampp\htdocs\uaswida\app\Controllers\Masjid.php(20): App\Models\Masjid_model->data_masjid_json()
+#4 C:\xampp\htdocs\uaswida\system\CodeIgniter.php(925): App\Controllers\Masjid->data_masjid_json()
+#5 C:\xampp\htdocs\uaswida\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masjid))
+#6 C:\xampp\htdocs\uaswida\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\uaswida\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-30 21:27:09 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Masjid_model.php(13): CodeIgniter\Database\BaseConnection->query('select a.id,a.nama_masjid,a.luas_tanah,a.luas_bangunan,
+		a.daya_tampung,a.tgl_resmi,a.alamat,b.provinsi,c.kategori,
+		d.tipologi,a.tanggal_masuk from tab_masjid as a 
+		left join tab_provinsi as b on a.provinsi = b.id
+		left join tab_kategori as c on a.kategori = c.id
+		left join tab_tipologi as d on a.tipologi = d.id')
+ 3 APPPATH\Controllers\Masjid.php(20): App\Models\Masjid_model->data_masjid_json()
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Masjid->data_masjid_json()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masjid))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

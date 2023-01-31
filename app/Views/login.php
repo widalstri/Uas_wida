@@ -28,7 +28,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Masjid KU Login</title>
+    <title>Masjid Kita Login</title>
 
     <meta name="description" content="" />
 
@@ -68,12 +68,12 @@
   <body>
     <!-- Content -->
 
-    <div class="container-xxl">
+    <div class="container-xxl bg-danger">
       <div class="authentication-wrapper authentication-basic container-p-y">
         <div class="authentication-inner">
           <!-- Register -->
           <div class="card">
-            <div class="card-body">
+            <div class="card-body bg-info">
               <!-- Logo -->
               <div class="app-brand justify-content-center">
                 <a href="index.html" class="app-brand-link gap-2">
@@ -132,11 +132,11 @@
                       </g>
                     </svg>
                   </span>
-                  <span class="app-brand-text demo text-body fw-bolder">Masjid KU</span>
+                  <span class="app-brand-text demo text-body fw-bolder">Masjid Kita</span>
                 </a>
               </div>
               <!-- /Logo -->
-              <h4 class="mb-2">Welcome to MASJID KU 👋</h4>
+              <h4 class="mb-2">Selamat Datang di Masjid Kita</h4>
 
               <form class="row g-3 needs-validation" method="POST" 
                   action="<?php echo base_url('home/login');?>">
@@ -169,7 +169,7 @@
                   </div>
                 </div>
                 <div class="mb-3">
-                  <button class="btn btn-primary d-grid w-100" type="submit">Sign in</button>
+                  <button class="btn btn-dark d-grid w-100" type="submit">Sign in</button>
                 </div>
               </form>
 
